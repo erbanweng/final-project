@@ -1,0 +1,11 @@
+// mixin能記住css技巧 不用在反覆回來複製 中斷思緒
+@mixin header($size,$bgcolor,$font) {
+    border-radius: 10%;
+    height: $size;
+    font-size: $font*1.5;
+    background-color: $bgcolor;
+}
+
+.header_box{
+    @include header(60px,green,14px)
+} 
